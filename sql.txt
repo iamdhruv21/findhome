@@ -1,0 +1,45 @@
+CREATE DATABASE IF NOT EXISTS ClientDetailsDB;
+USE ClientDetailsDB;
+
+
+CREATE TABLE Clients (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+
+
+CREATE TABLE Details (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    client_id INT,
+    owner_name VARCHAR(100) NOT NULL,
+    owner_contact VARCHAR(15) NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    google_location VARCHAR(255),
+    image TEXT,
+    size DECIMAL(10,2),
+    price DECIMAL(10,2),
+    type VARCHAR(50),
+    rooms INT,
+    FOREIGN KEY (client_id) REFERENCES Clients(id) ON DELETE CASCADE
+);
+
+
+INSERT INTO Clients (name, email, password)
+VALUES 
+('John Doe', 'john.doe@example.com', 'hashedpassword123'),
+('Jane Smith', 'jane.smith@example.com', 'hashedpassword456');
+
+
+INSERT INTO Details (client_id, owner_name, owner_contact, location, google_location, image, size, price, type, rooms)
+VALUES
+(1, 'John Doe', '+1234567890', '123 Main St, Springfield', 'https://goo.gl/maps/sample1', 'image_path_1.jpg', 120.50, 150000.00, 'Apartment', 3),
+(2, 'Jane Smith', '+0987654321', '456 Elm St, Metropolis', 'https://goo.gl/maps/sample2', 'image_path_2.jpg', 85.00, 95000.00, 'Condo', 2);
+
+
+vlZPHt21Ihfa
+
+
+MySQL DB Name	MySQL User Name	MySQL Password	MySQL Host Name	PHPMyAdmin
+if0_37316556_findhome	if0_37316556	(Your vPanel Password)	sql112.infinityfree.com

@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.login-container {
+    height: 100vh;
+}
+
+.login-form {
+    background-color: #fff;
+    width: 20rem;
+    height: 24rem;
+    padding: 2rem  1.5rem 2.5rem 1.5rem;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    margin-bottom: 35px;
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(25, 24, 24)
+}
+
+.form-group {
+    margin: 0 auto 35px auto;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: large;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(25, 24, 24);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: black;
+}
+
+.login-form p {
+    color: gray;
+    text-align: center;
+}
+
+.login-form p a {
+    text-decoration: none;
+    color: black;
+}
+
+.login-form p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .login-form{
+        width: 17rem;
+        height: 22.5rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .login-form h2 {
+        margin-bottom: 15px;
+    }
+
+    .form-group {
+        margin: 0 auto 20px auto;
+    }
+}

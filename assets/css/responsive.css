@@ -1,0 +1,20 @@
+@media screen and (min-width: 1300px) {
+    .card2{
+        height: 300px;
+    }
+    .card2 img{
+        height: 280px;
+    }
+    .detail{
+        position: relative;
+    }
+    .detail div{
+        position: absolute;
+        bottom: 2.5rem;
+    }
+    .detail button{
+        position: absolute;
+        bottom: 0.5rem;
+        right: 0.5rem;
+    }
+}
